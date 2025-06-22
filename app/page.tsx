@@ -99,24 +99,37 @@ export default function Home() {
       sharedToday: false,
     }
 
-    console.log("Registering new user:", newUser)
+    console.log("=== REGISTRANDO USUARIO ===")
+    console.log("Datos del usuario:", newUser)
 
-    // Guardar usuario
+    // Guardar usuario localmente primero
     localStorage.setItem("taqueria-user", JSON.stringify(newUser))
     setUser(newUser)
 
-    // Ir directamente a la ruleta SIN verificar estado
+    // Ir directamente a la ruleta
     setGameState("canSpin")
 
-    // Integración con Mailchimp (opcional por ahora)
+    // Integración con Brevo
     try {
-      await fetch("/api/register-user", {
+      console.log("🚀 Enviando a API de registro...")
+      const response = await fetch("/api/register-user", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email }),
       })
+
+      console.log("📥 Respuesta de API - Status:", response.status)
+
+      const result = await response.json()
+      console.log("📥 Respuesta de API - Data:", result)
+
+      if (response.ok) {
+        console.log("✅ Usuario registrado exitosamente en Brevo")
+      } else {
+        console.error("❌ Error registrando en Brevo:", result)
+      }
     } catch (error) {
-      console.error("Error registering user:", error)
+      console.error("💥 Error llamando a API de registro:", error)
     }
   }
 
