@@ -195,12 +195,47 @@ export default function Home() {
               ← Volver a la Ruleta
             </button>
           </div>
-          <div className="bg-white rounded-lg p-6">
-            <h1 className="text-3xl font-bold text-brand-black text-center mb-6">
-              🌮 Menú - Tacos al Carbon y Salsas Bravas 🌮
-            </h1>
-            <p className="text-center text-gray-600">Menú completo próximamente...</p>
-          </div>
+          <div className="bg-white rounded-lg p-6 shadow-xl">
+  <h1 className="text-3xl font-bold text-brand-black text-center mb-6">
+    🌮 Menú - Tacos al Carbón y Salsas Bravas 🌮
+  </h1>
+
+  <div className="space-y-6 text-brand-black">
+    {/* Tacos */}
+    <div>
+      <h2 className="text-2xl font-semibold text-center mb-2">🌮 Tacos</h2>
+      <ul className="space-y-1 text-center">
+        <li><span className="font-bold">Taco de Sirloin “Sirlón”</span> – $40</li>
+        <li><span className="font-bold">Taco de Chorizo Asadero “Corona”</span> – $40</li>
+        <li><span className="font-bold">Taco Combinado (Sirlón + Corona)</span> – $40</li>
+      </ul>
+      <p className="mt-2 text-center text-sm text-gray-600">Incluye acceso libre a nuestra barra de salsas bravas 🔥</p>
+    </div>
+
+    {/* Quesadillas */}
+    <div>
+      <h2 className="text-2xl font-semibold text-center mb-2">🧀 Quesadillas</h2>
+      <ul className="space-y-1 text-center">
+        <li><span className="font-bold">Quesadilla Natural</span> – $40</li>
+        <li><span className="font-bold">Quesadilla con Sirloin</span> – $50</li>
+        <li><span className="font-bold">Quesadilla con Chorizo</span> – $50</li>
+        <li><span className="font-bold">Quesadilla Combinada</span> – $50</li>
+      </ul>
+    </div>
+
+    {/* Salsas */}
+    <div>
+      <h2 className="text-2xl font-semibold text-center mb-2">🧴 Salsas Bravas (¡Auto‑servicio!)</h2>
+    </div>
+
+    {/* Refrescos */}
+    <div>
+      <h2 className="text-2xl font-semibold text-center mb-2">🥤 Refrescos de Vidrio</h2>
+      <p className="text-center">Todos a <span className="font-bold">$20</span></p>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
     )
