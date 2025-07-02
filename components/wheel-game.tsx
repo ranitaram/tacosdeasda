@@ -15,8 +15,8 @@ interface WheelGameProps {
 const prizes = [
   { label: "🌮 1 Taco Gratis", chance: 0.15, color: "#DC2626", textColor: "white" },
   { label: "🥤 1 Refresco Gratis", chance: 0.15, color: "#D97706", textColor: "white" },
-  { label: "💰 30% Descuento", chance: 0.15, color: "#DC2626", textColor: "white" },
-  { label: "💰 40% Descuento", chance: 0.15, color: "#D97706", textColor: "white" },
+  { label: "💰 10% Descuento", chance: 0.15, color: "#DC2626", textColor: "white" },
+  { label: "💰 20% Descuento", chance: 0.15, color: "#D97706", textColor: "white" },
   { label: "😞 Sin Premio", chance: 0.2, color: "#1F1F1F", textColor: "white" },
   { label: "😞 Sin Premio", chance: 0.2, color: "#1F1F1F", textColor: "white" },
 ]

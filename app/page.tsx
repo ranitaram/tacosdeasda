@@ -234,6 +234,26 @@ export default function Home() {
       <p className="text-center">Todos a <span className="font-bold">$20</span></p>
     </div>
   </div>
+  {/* Ubicación del local */}
+<div className="mt-12 bg-white rounded-lg shadow-xl p-6">
+  <h2 className="text-2xl font-bold text-brand-black text-center mb-4">📍 Visítanos en:</h2>
+  <p className="text-center text-gray-700 mb-4">
+    Rey Nayar 2A, José María Martínez, 63190 Tepic, Nay.
+  </p>
+  <div className="w-full h-64 rounded-lg overflow-hidden shadow-md">
+    <iframe
+      title="Ubicación de la Taquería"
+      src="https://www.google.com/maps?q=Rey+Nayar+2A,+José+María+Martínez,+63190+Tepic,+Nay.&output=embed"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
+
 </div>
 
         </div>
@@ -285,6 +305,26 @@ export default function Home() {
           )}
         </div>
       </div>
+      {/* Ubicación del local */}
+<div className="mt-12 bg-white rounded-lg shadow-xl p-6">
+  <h2 className="text-2xl font-bold text-brand-black text-center mb-4">📍 Visítanos en:</h2>
+  <p className="text-center text-gray-700 mb-4">
+    Rey Nayar 2A, José María Martínez, 63190 Tepic, Nay.
+  </p>
+  <div className="w-full h-64 rounded-lg overflow-hidden shadow-md">
+    <iframe
+      title="Ubicación de la Taquería"
+      src="https://www.google.com/maps?q=Rey+Nayar+2A,+José+María+Martínez,+63190+Tepic,+Nay.&output=embed"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
+
     </div>
   )
 }
